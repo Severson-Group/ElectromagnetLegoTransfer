@@ -1,4 +1,4 @@
-clear;
+clear all;
 
 %% Problem Def and Sweep Space
 
@@ -19,7 +19,7 @@ payload = 10; %payload mass in grams
 
 %% Sweep Electromag current while keeping Z posn constant
 
-N = 50;
+N = 100;
 electromagnetCurrent = linspace(currentMin,currentMax,N);
 fieldIntensity = [];
 force_current = [];
@@ -103,7 +103,7 @@ dfdi = (netForce_current(linearizationPointIndex+2)-netForce_current(linearizati
 
 F_linear = dfdi*(electromagnetCurrent - electromagnetCurrent(linearizationPointIndex)) + netForce_current(linearizationPointIndex) ; 
 
-error_current = (F_linear-netForce_current)./netForce_current ;
+error_current = abs((F_linear-netForce_current)./netForce_current) ;
 error_current = error_current*100;
 
 figure();
@@ -124,7 +124,7 @@ dfdz = (netZForce(linearizationPointIndex+2)-netZForce(linearizationPointIndex-2
 
 Z_linear = dfdz*(magnetZ - magnetZ(linearizationPointIndex)) + netZForce(linearizationPointIndex) ; 
 
-error_z = (Z_linear-netZForce)./netZForce ;
+error_z = abs((Z_linear-netZForce)./netZForce) ;
 error_z = error_z.*100;
 
 figure();
@@ -146,7 +146,7 @@ dTdz = (fieldIntensity(linearizationPointIndex+2)-fieldIntensity(linearizationPo
 
 B_linear = dTdz*(magnetZ - magnetZ(linearizationPointIndex)) + fieldIntensity(linearizationPointIndex) ; 
 
-error_B = (B_linear-fieldIntensity)./fieldIntensity ;
+error_B = abs((B_linear-fieldIntensity)./fieldIntensity) ;
 error_B = error_B.*100;
 
 figure();
