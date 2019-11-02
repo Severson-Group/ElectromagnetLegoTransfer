@@ -1,0 +1,28 @@
+* C:\Users\Tom\Documents\LEGO STEM\ElectromagnetLego\LTSpice Simulation\SwitchedModeController.asc
+XU1 NC_01 FB_INPUT I_SENSE RC_OSC 0 PWM_IN V_SUPPLY N004 LT1242
+V1 V_SUPPLY 0 15
+R1 N004 RC_OSC 12k
+C1 RC_OSC 0 220µ
+C2 N004 0 0.1µ
+M2 FB_INPUT N003 I_SENSE I_SENSE IPP052NE7N3
+R4 P001 FB_INPUT 2.5
+L1 R_SENSE_L P001 34m
+D1 FB_INPUT R_SENSE_H MBR735
+L2 V_SUPPLY R_SENSE_H 1n
+R5 N003 PWM_IN 63
+R6 0 PWM_IN 10K
+R7 R_SENSE_H R_SENSE_L 0.007
+V3 N001 0 3
+V4 N002 0 1
+R2 I_SENSE 0 4
+.model D D
+.lib C:\Users\Tom\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Tom\Documents\LTspiceXVII\lib\cmp\standard.mos
+* Line Inductance
+* Electromagnet
+.tran 1
+.lib LT1242.sub
+.backanno
+.end
