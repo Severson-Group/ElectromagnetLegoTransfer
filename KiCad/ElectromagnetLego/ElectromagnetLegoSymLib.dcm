@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IPP052NE7N3
+D N-MOSFET transistor, gate/drain/source
+K transistor NMOS N-MOS N-MOSFET
+F ~
+$ENDCMP
+#
+#End Doc Library
