@@ -136,7 +136,7 @@ plot(magnetZ,Z_linear) ;
 yyaxis right
 plot(magnetZ,error_z) ;
 ylabel('Linearization Error (%)');
-title("Force/Position Linearization with Payload of 10g");
+title("Net Force/Position Linearization with Payload of 10g");
 hold off;
 
 %% B Field /Distance Linearization
