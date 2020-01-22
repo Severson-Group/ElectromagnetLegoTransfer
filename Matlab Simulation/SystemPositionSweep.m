@@ -4,22 +4,22 @@ clear all;
 
 hallEffectSensorZ = -5; %Hall effect sensor position
 linearizedZposn = 2.5;
-linearizedCurrent = 2.65;
+linearizedCurrent = 0.833;
 
 %Z posn in cm
 magnetZMax = linearizedZposn + 1;
 magnetZMin = linearizedZposn - 1;
 
 %Min and Max Current
-currentMax = linearizedCurrent + 1.;
-currentMin = linearizedCurrent - 1;
+currentMax = linearizedCurrent + linearizedCurrent;
+currentMin = linearizedCurrent - linearizedCurrent;
 
-payload = 10; %payload mass in grams
+payload = 5; %payload mass in grams
 
 
 %% Sweep Electromag current while keeping Z posn constant
 
-N = 100;
+N = 10;
 electromagnetCurrent = linspace(currentMin,currentMax,N);
 fieldIntensity = [];
 force_current = [];
@@ -115,7 +115,7 @@ plot(electromagnetCurrent,F_linear) ;
 yyaxis right
 plot(electromagnetCurrent,error_current) ;
 ylabel('Error (%)');
-title("Current Linearization with Payload of 10g");
+title("Current Linearization with Payload of 5g");
 hold off;
 
 %% Force/Distance Linearization
@@ -136,7 +136,7 @@ plot(magnetZ,Z_linear) ;
 yyaxis right
 plot(magnetZ,error_z) ;
 ylabel('Linearization Error (%)');
-title("Net Force/Position Linearization with Payload of 10g");
+title("Net Force/Position Linearization with Payload of 5g");
 hold off;
 
 %% B Field /Distance Linearization
@@ -158,5 +158,5 @@ plot(magnetZ,B_linear) ;
 yyaxis right
 plot(magnetZ,error_B) ;
 ylabel('Linearization Error (%)');
-title("Field Intensity Linearization with Payload of 10g");
+title("Field Intensity Linearization with Payload of 5g");
 hold off;

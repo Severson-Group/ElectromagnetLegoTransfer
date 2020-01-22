@@ -16,7 +16,7 @@ boltRadius = 5e-1;
 boltHeight = 50e-1;
 boltHeadRadius = 1.7/2;
 boldHeadHeight = 0.617;
-electroCoreMatType = '1006 Steel' ;
+electroCoreMatType = '1018 Steel' ;
 
 % Coil
 electroCoilMatType = '24 AWG' ; 
@@ -27,7 +27,8 @@ wireOhmPerMeter = 80e-3;
 fillFactor = 0.3; %Estimate with very bad fill factor
 coilWidth = halfWidth - boltRadius - wallWidth;
 coilArea = boltHeight*coilWidth;
-maxTurns = floor(coilArea*fillFactor/wireArea);
+
+maxTurns = 1025; %Actual turn number
 
 coilWireLength = (boltRadius + coilWidth/2)*2*pi*maxTurns/100; % in meters
 coilResistance = coilWireLength*wireOhmPerMeter;

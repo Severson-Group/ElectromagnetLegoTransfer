@@ -4,11 +4,11 @@ clear;
 
 % Linearized, estimated parameters
 Ks = 0.0028; % Sensor Gain
-dfdz = -0.1159; % Change in force per change in Z (cm)
-dfdi = 0.0422; % Change in force per amp
-dTdz = 0.0028; %Change in T (field intensity vs z (in cm)
+dfdz = -0.0877; % Change in force per change in Z (cm)
+dfdi = 0.0793; % Change in force per amp
+dTdz = 0.0042; %Change in T (field intensity vs z (in cm)
 
-M = 0.0118; % Total Levitation mass (in Kg)
+M = 0.0068; % Total Levitation mass (in Kg)
 
 
 %% Unity feedback PD controller with damping = 1
@@ -69,5 +69,8 @@ G = electromag_plant_tf*pid_controller_tf;
 ClosedLoop_tf = G / (1 + G) ; 
 figure();
 [z,t] = step(ClosedLoop_tf) ; 
+
 plot(t,2.5*z);
-title(['Z Step Responce with Kp = ',num2str(Kp)]);
+title('System Step Responce');
+
+bode(electromag_plant_tf);
