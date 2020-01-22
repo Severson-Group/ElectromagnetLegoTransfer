@@ -1,0 +1,174 @@
+Circuit: * C:\Users\Tom\Documents\LEGO STEM\ElectromagnetLego\LTSpice Simulation\SensorAmplification.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 6.49556e-005
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 6.2499e-005
+vernier = 0.0104167
+Gmin = 6.10926e-005
+vernier = 0.0138889
+vernier = 0.0185185
+Gmin = 5.88585e-005
+vernier = 0.0246913
+vernier = 0.0329218
+Gmin = 5.54876e-005
+vernier = 0.0438957
+Gmin = 5.04309e-005
+vernier = 0.0585276
+vernier = 0.0780367
+Gmin = 4.31452e-005
+vernier = 0.104049
+vernier = 0.138732
+Gmin = 3.37316e-005
+vernier = 0.184976
+Gmin = 2.269e-005
+vernier = 0.246634
+vernier = 0.328846
+Gmin = 1.19497e-005
+vernier = 0.438461
+vernier = 0.584614
+Gmin = 4.407e-006
+vernier = 0.779486
+vernier = 0.389743
+Gmin = 1.42203e-006
+vernier = 0.194871
+vernier = 0.0974357
+vernier = 0.0487178
+vernier = 0.0243589
+Gmin = 1.33965e-006
+vernier = 0.0121795
+vernier = 0.00608973
+vernier = 0.00304487
+vernier = 0.00152243
+Gmin = 1.33863e-006
+vernier = 0.000761216
+vernier = 0.000570912
+vernier = 0.000428184
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 88.6364%
+vernier = 0.0625
+Source Step = 87.8995%
+Source Step = 87.9291%
+Source Step = 87.9587%
+Source Step = 87.9883%
+Source Step = 88.0179%
+Source Step = 88.0475%
+vernier = 0.00146484
+Source Step = 88.0919%
+Source Step = 88.1362%
+Source Step = 88.1806%
+Source Step = 88.225%
+Source Step = 88.2694%
+vernier = 0.00219727
+Source Step = 88.3338%
+Source Step = 88.4004%
+Source Step = 88.4669%
+Source Step = 88.5335%
+Source Step = 88.6001%
+vernier = 0.0032959
+Source Step = 88.6933%
+Source Step = 88.7932%
+Source Step = 88.8931%
+Source Step = 88.993%
+Source Step = 89.0928%
+vernier = 0.00494385
+Source Step = 89.2277%
+Source Step = 89.3775%
+Source Step = 89.5273%
+Source Step = 89.6771%
+Source Step = 89.8269%
+vernier = 0.00741577
+Source Step = 90.0217%
+Source Step = 90.1734%
+Source Step = 90.2295%
+Source Step = 90.2857%
+Source Step = 90.3419%
+Source Step = 90.3981%
+Source Step = 90.4543%
+Source Step = 90.5104%
+Source Step = 90.5666%
+Source Step = 90.6228%
+Source Step = 90.679%
+Source Step = 90.7352%
+vernier = 0.00278091
+Source Step = 90.8082%
+Source Step = 90.8925%
+Source Step = 90.9767%
+Source Step = 91.061%
+Source Step = 91.1453%
+vernier = 0.00417137
+Source Step = 91.2506%
+Source Step = 91.377%
+Source Step = 91.5034%
+Source Step = 91.6298%
+Source Step = 91.7562%
+vernier = 0.00625706
+Source Step = 91.9079%
+Source Step = 92.0975%
+Source Step = 92.2871%
+Source Step = 92.4767%
+Source Step = 92.6664%
+vernier = 0.00938559
+Source Step = 92.8844%
+Source Step = 93.1688%
+Source Step = 93.4532%
+Source Step = 93.7376%
+Source Step = 94.0221%
+vernier = 0.0140784
+Source Step = 94.3349%
+Source Step = 94.7615%
+Source Step = 95.1881%
+Source Step = 95.6148%
+Source Step = 96.0414%
+vernier = 0.0211176
+Source Step = 96.4893%
+Source Step = 97.1292%
+Source Step = 97.7692%
+Source Step = 98.4091%
+Source Step = 99.049%
+Source Step = 99.689%
+vernier = 0.0316764
+Source stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(u1:1)
+Ignoring empty pin current: Ix(u1:2)
+Ignoring empty pin current: Ix(u1:1)
+Ignoring empty pin current: Ix(u1:2)
+
+Date: Thu Nov 21 21:19:35 2019
+Total elapsed time: 2.851 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 19793
+traniter = 9148
+tranpoints = 3576
+accept = 2576
+rejected = 1000
+matrix size = 143
+fillins = 202
+solver = Normal
+Thread vector: 7.9/4.9[3] 3.7/3.0[2] 10.1/6.0[3] 0.7/1.5[1]  2592/500
+Matrix Compiler1: 17.93 KB object code size  5.3/6.3/[1.4]
+Matrix Compiler2: 15.02 KB object code size  3.5/4.2/[0.9]
+
