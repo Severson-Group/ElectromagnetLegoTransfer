@@ -28,8 +28,11 @@ fillFactor = 0.3; %Estimate with very bad fill factor
 coilWidth = halfWidth - boltRadius - wallWidth;
 coilArea = boltHeight*coilWidth;
 
+% Can be actual (constructed) or a calculated turn count based on fill
+% factor
 maxTurns = 1025; %Actual turn number
 
+% Estimates for coil R and coil length
 coilWireLength = (boltRadius + coilWidth/2)*2*pi*maxTurns/100; % in meters
 coilResistance = coilWireLength*wireOhmPerMeter;
 

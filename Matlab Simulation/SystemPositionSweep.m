@@ -4,7 +4,7 @@ clear all;
 
 hallEffectSensorZ = -5; %Hall effect sensor position
 linearizedZposn = 2.5;
-linearizedCurrent = 0.833;
+linearizedCurrent = 0.833; % Need to pre-dermine this through calculation / trial and error
 
 %Z posn in cm
 magnetZMax = linearizedZposn + 1;
@@ -19,7 +19,9 @@ payload = 5; %payload mass in grams
 
 %% Sweep Electromag current while keeping Z posn constant
 
+% Sweep points
 N = 10;
+
 electromagnetCurrent = linspace(currentMin,currentMax,N);
 fieldIntensity = [];
 force_current = [];
