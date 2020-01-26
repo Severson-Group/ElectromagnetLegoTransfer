@@ -3,9 +3,9 @@
  * 12/18/2019 
  * Overhaul: 
  * Changes to be made
+ *      -Changed to microsecond timer instead of milli
  *      -Faster control loop
  *      -Control loop timing in micros
- *      -
  * 
  * 
  * Arduino PID Library - Version 1.2.1

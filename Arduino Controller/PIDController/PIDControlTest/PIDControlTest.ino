@@ -50,8 +50,8 @@ void loop() {
   
   Input = analogRead(PIN_INPUT)*5/(float)1023;
 // Correct Input for electromagnet input (fudge factor)
-// Could do this automatically on start-up with no magnet in the middle 
-//  Input = Input + (-0.20)*((Output)/255)+0.20;
+// Could do some automatic calibration automatically on start-up with no magnet in the middle 
+// Input = Input + (-0.20)*((Output)/255)+0.20;
 
   consKp = analogRead(KP_IN)/(float)1023*250;
   consKi = analogRead(KI_IN)/(float)1023*100;
@@ -65,7 +65,7 @@ void loop() {
     unsigned long now = micros();
     unsigned long timeChange = (now - lastLoopTime);
     unsigned int pid_change = (pid_t - pid_t_last);
-    Serial.print("Kp = ");
+    Serial.print("Kp =s ");
     Serial.print(consKp);
     Serial.print(" Kd = ");
     Serial.print(consKd); 
@@ -84,7 +84,6 @@ void loop() {
     pid_t_last = pid_t;
     lastLoopTime = now;
   }
-  
   
   pid.SetTunings(consKp, consKi, consKd);
   if(pid.Compute()) {
