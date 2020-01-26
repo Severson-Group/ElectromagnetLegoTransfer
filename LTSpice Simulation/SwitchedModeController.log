@@ -1,5 +1,7 @@
 Circuit: * C:\Users\Tom\Documents\LEGO STEM\ElectromagnetLego\LTSpice Simulation\SwitchedModeController.asc
 
+Limiting rise time of source v2 to 2.5e-005
+Limiting fall time of source v2 to 2.5e-005
 Per .tran options, skipping operating point for transient analysis.
 Ignoring empty pin current: Ix(ea1:1)
 Ignoring empty pin current: Ix(ea1:2)
@@ -20,31 +22,28 @@ Ignoring empty pin current: Ix(u2:2)
 Ignoring empty pin current: Ix(u2:3)
 Ignoring empty pin current: Ix(u2:4)
 Ignoring empty pin current: Ix(u2:5)
-Changing Tseed to 1e-008
-Changing Tseed to 1e-010
-Heightened Def Con from 0.0235039 to 0.0235039
-Heightened Def Con from 0.0756454 to 0.0756454
-Heightened Def Con from 0.205929 to 0.205929
-Heightened Def Con from 0.267963 to 0.267963
-Heightened Def Con from 0.521294 to 0.521294
-Heightened Def Con from 0.534352 to 0.534352
-Heightened Def Con from 0.697395 to 0.697395
-Heightened Def Con from 0.994588 to 0.994588
+Changing Tseed to 9.76562e-009
+Changing Tseed to 9.76563e-011
+Heightened Def Con from 0.0317924 to 0.0317924
+Heightened Def Con from 0.039293 to 0.039293
+Heightened Def Con from 0.0732935 to 0.0732935
+Heightened Def Con from 0.0902969 to 0.0902969
+Heightened Def Con from 0.0997935 to 0.0997935
 
-Date: Thu Nov 07 19:26:58 2019
-Total elapsed time: 38.291 seconds.
+Date: Sun Jan 26 13:56:09 2020
+Total elapsed time: 11.726 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 3266641
-traniter = 3266641
-tranpoints = 983666
-accept = 695813
-rejected = 287859
+totiter = 1220492
+traniter = 1220492
+tranpoints = 374412
+accept = 267378
+rejected = 107037
 matrix size = 52
 fillins = 11
 solver = Normal
-Matrix Compiler1: 2.68 KB object code size  0.8/0.7/[0.3]
-Matrix Compiler2: 4.00 KB object code size  0.5/1.1/[0.3]
+Matrix Compiler1: 2.71 KB object code size  0.6/0.4/[0.2]
+Matrix Compiler2: 4.01 KB object code size  0.4/0.6/[0.3]
 

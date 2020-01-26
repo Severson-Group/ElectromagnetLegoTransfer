@@ -1,0 +1,23 @@
+* C:\Users\Tom\Documents\LEGO STEM\ElectromagnetLego\LTSpice Simulation\PWMMFETSimulation.asc
+M1 N001 N002 0 0 IPP052NE7N3
+R1 P001 N001 5
+L1 R_SENSE_L P001 17m
+D1 N001 R_SENSE_H MBR735
+V1 P002 0 12
+R2 N002 PWM_IN 63
+R3 0 PWM_IN 10K
+V2 PWM_IN 0 PULSE(0 5 0 0 0 0.0005 0.001 1000)
+R4 R_SENSE_H R_SENSE_L 0.007
+L3 V_SUPPLY P002 1n
+C1 R_SENSE_H 0 470µ
+L2 V_SUPPLY R_SENSE_H 1n
+.model D D
+.lib C:\Users\Tom\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Tom\Documents\LTspiceXVII\lib\cmp\standard.mos
+* Electromagnet
+* 1Khz PWM
+.tran 0 0.02 0.01
+.backanno
+.end
