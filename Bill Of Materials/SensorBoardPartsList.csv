@@ -1,0 +1,8 @@
+Part Name,On Board Designation,Part Number (Digikey),Link,Price,Quantity Req 
+DRV5053,U1,296-38604-1-ND,https://www.digikey.com/product-detail/en/texas-instruments/DRV5053EAQLPGM/296-38604-1-ND/5051705,$0.98,1
+LM358,U2,296-1395-5-ND,https://www.digikey.com/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042,$0.37,1
+20K Trimpot (not required),RV1,3306P-203-ND,https://www.digikey.com/product-detail/en/bourns-inc/3306P-1-203/3306P-203-ND/84922,$0.40,1
+1K Through-Hole Resistor,R2,N/A,N/A,$0.00,1
+10K Through-Hole Resistor,R1,N/A,N/A,$0.00,1
+0.1uF Capacitor (Ceramic),"C1,C2,C3",N/A,N/A,$0.00,3
+Jumpers (Various Lengths),J1,N/A,N/A,$0.00,1
